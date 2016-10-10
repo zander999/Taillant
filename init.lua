@@ -27,3 +27,17 @@ minetest.register_on_punchnode(function(pos, node, puncher, pointed_thing)
 		end
 	end
 )
+
+minetest.register_craftitem("taillant:taillant_smash", {
+    description = "The Taillant Destroyer",
+    inventory_image = "stone_extractor_blase.png"
+})
+
+minetest.register_on_punchnode(function(pos, node, puncher, pointed_thing)
+	if puncher:get_wielded_item():get_name() == "taillant:taillant_smash"
+	and node.name == "default:cobble" then
+		minetest.set_node(pos, {name="default:air"})
+		puncher:get_inventory():add_item('main', "default:gravel")
+		end
+	end
+)
