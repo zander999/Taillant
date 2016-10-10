@@ -4,7 +4,7 @@ hi this is my seccond mod posted online.
 
 # how it works
 
-you simply mine stone into cobblestone.
+you simply mine stone into cobblestone and cobblestone into stone!!!
 
 # why i did it
 
