@@ -16,7 +16,7 @@ minetest.register_on_punchnode(function(pos, node, puncher, pointed_thing)
 
 minetest.register_craftitem("taillant:taillant_reverse", {
     description = "The Taillant(in reverse)",
-    inventory_image = "stone_extractor.png"
+    inventory_image = "stone_extractor_reverse.png"
 })
 
 minetest.register_on_punchnode(function(pos, node, puncher, pointed_thing)
