@@ -36,7 +36,7 @@ minetest.register_craftitem("taillant:taillant_smash", {
 minetest.register_on_punchnode(function(pos, node, puncher, pointed_thing)
 	if puncher:get_wielded_item():get_name() == "taillant:taillant_smash"
 	and node.name == "default:cobble" then
-		minetest.set_node(pos, {name="default:air"})
+		minetest.remove_node(pos, {name="default:cobble"})
 		puncher:get_inventory():add_item('main', "default:gravel")
 		end
 	end
